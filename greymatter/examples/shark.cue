@@ -41,14 +41,14 @@ Shark: gsl.#Service & {
 			//  NOTE: this must be filled out by a user. Impersonation allows other services to act on the behalf of identities
 			//  inside the system. Please uncomment if you wish to enable impersonation. If the servers list if left empty,
 			//  all traffic will be blocked.
-			filters: [
-				gsl.#ImpersonationFilter & {
-						#options: {
-							servers: "CN=alec.holmes,OU=Engineering,O=Decipher Technology Studios,L=Alexandria,ST=Virginia,C=US|x500UniqueIdentifier=e68ef81ca228f4dc66dd5ad696386d96,O=SPIRE,C=US"
-							caseSensitive: false
-						}
-				},
-			]
+			// filters: [
+			// 	gsl.#ImpersonationFilter & {
+			// 			#options: {
+			// 				servers: "CN=alec.holmes,OU=Engineering,O=Decipher Technology Studios,L=Alexandria,ST=Virginia,C=US|x500UniqueIdentifier=e68ef81ca228f4dc66dd5ad696386d96,O=SPIRE,C=US"
+			// 				caseSensitive: false
+			// 			}
+			// 	},
+			// ]
 			routes: {
 				"/": {
 					
