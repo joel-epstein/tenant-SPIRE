@@ -48,67 +48,6 @@ Shark: gsl.#Service & {
 			// 				caseSensitive: false
 			// 			}
 			// 	},
-				// gsl.#RBACFilter & {
-				// 	#options: {
-				// 		"rules": {
-				// 			action: "DENY"
-				// 			policies: {
-				// 				"0-admin": {
-				// 					permissions: [
-				// 						{
-				// 							any: true
-				// 						},
-				// 					]
-				// 					principals: [
-				// 						{
-				// 							"header": {
-				// 								"name":        "user_dn"
-				// 								"exact_match": "x500UniqueIdentifier=f07a39d626691f0d9cb311867d93abe1,O=SPIRE,C=US"
-				// 							}
-				// 						},
-				// 						{
-				// 							"header": {
-				// 								"name":        "user_dn"
-				// 								"exact_match": "x500UniqueIdentifier=41e6ca07852a9a84e80cde0563ab0c02,O=SPIRE,C=US"
-				// 							}
-				// 						},
-				// 					]
-				// 				}
-				// 				"1-public": {
-				// 					"permissions": [
-				// 						{
-				// 							"header": {
-				// 								"name": ":path"
-				// 								"safe_regex_match": {
-				// 									"google_re2": {}
-				// 									"regex": "^/*.*(/users/.*/accesses|/userattributes|/snippets).*$"
-				// 								}
-				// 								"invert_match": true
-				// 							}
-				// 						},
-				// 					]
-				// 					"principals": [
-				// 						{
-				// 							"any": true
-				// 						},
-				// 					]
-				// 				}
-				// 			}
-				// 		}
-				// 	}
-				// },
-				// gsl.#FaultInjectionFilter & {
-				// 	#options: {
-				// 		abort: {
-				// 			// header_abort: {} // Headers can also specify the percentage of requests to fail, capped by the below value with the x-envoy-fault-abort-request-percentage header
-				// 			percentage: {
-				// 				numerator: 10
-				// 				denominator: "HUNDRED"
-				// 			}
-				// 			http_status: 404
-				// 		}
-				// 	}
-				// }
 			// ]
 			routes: {
 				"/": {
